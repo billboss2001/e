@@ -1,3 +1,4 @@
+<script>
 document.addEventListener("DOMContentLoaded", function() {
     // Array of translation texts
     const langs = {
@@ -124,4 +125,4 @@ xmlhttp.send(null);
 
 document.write('<div data-etn-vendor="etn-it-0abc123def456/7ce25b4dc0/1234.56"></div>')
 document.write('<h2>testing dat-etn-vendor="etn-it-0abc123def456/7ce25b4dc0/1234.56"</h2>')
-
+</script>
