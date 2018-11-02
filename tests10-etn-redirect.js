@@ -11,7 +11,6 @@ window.onload=function what(){
           if(xmlhttp.status == 200) {
               var price1 = JSON.parse(xmlhttp.responseText);
               price = price1["price_"+currencycode]
-  alert(price)
            }
       }
   };
@@ -25,4 +24,5 @@ var paymentID = '5b4dc07ce2'
 var amount = '7.89'
 var testdiv = document.getElementById("etnwidget");
   testdiv.innerHTML = "<div data-etn-vendor='"+vendoraddress+"/"+paymentID+"/"+amount+"' data-etn-lang='en'></div>"
+   alert(price)
 }
