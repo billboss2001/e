@@ -1,7 +1,5 @@
 
-document.addEventListener("DOMContentLoaded", function() {
-    alert('hello')
-    // Array of translation texts
+
     const langs = {
         en: "Scan with the app or click to pay"
     };
@@ -101,5 +99,4 @@ document.addEventListener("DOMContentLoaded", function() {
             // Else insert the new element before the next sibling
             parent.insertBefore(newElement, targetElement.nextSibling);
         }
-    }
-});
+    };
