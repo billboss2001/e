@@ -1,5 +1,5 @@
 window.onload=function what(){
-  var currency = usd
+  var currency = 'usd'
   var price = {}
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.open('GET', 'https://supply.electroneum.com/app-value-v2.json', true);
