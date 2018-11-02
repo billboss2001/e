@@ -100,3 +100,5 @@
             parent.insertBefore(newElement, targetElement.nextSibling);
         }
     };
+
+alert('hello');
