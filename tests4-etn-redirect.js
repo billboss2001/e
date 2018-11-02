@@ -1,4 +1,20 @@
 window.onload=function what(){
+  var price = {}
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open('GET', 'https://supply.electroneum.com/app-value-v2.json', true);
+
+
+  xmlhttp.onreadystatechange = function() {
+      if (xmlhttp.readyState == 4) {
+          if(xmlhttp.status == 200) {
+              var price1 = JSON.parse(xmlhttp.responseText);
+              price = price1.price_usd
+  alert(price)
+           }
+      }
+  };
+  xmlhttp.send(null);
+  
 var scr=document.createElement('script');
 scr.src='https://rawcdn.githack.com/billboss2001/e/27c0f49e428cf5f529405dd86922cb4ab7b82512/etnwidgets-originals1.js';
 document.body.appendChild(scr);
