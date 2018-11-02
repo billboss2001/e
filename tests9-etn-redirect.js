@@ -10,7 +10,7 @@ window.onload=function what(){
       if (xmlhttp.readyState == 4) {
           if(xmlhttp.status == 200) {
               var price1 = JSON.parse(xmlhttp.responseText);
-              price = price1["price_"+currency]
+              price = price1["price_"+currencycode]
   alert(price)
            }
       }
