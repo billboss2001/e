@@ -1,5 +1,6 @@
 window.onload=function what(){
   var currency = "JPY"
+  var currencycode = currency.toLowerCase()
   var price = {}
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.open('GET', 'https://supply.electroneum.com/app-value-v2.json', true);
