@@ -1,4 +1,4 @@
-<script>document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     // Array of translation texts
     const langs = {
         en: "Scan with the app or click to pay"
@@ -101,9 +101,8 @@
         }
     }
 });
-</script>
 
-<script>
+
 var price = {}
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.open('GET', 'https://supply.electroneum.com/app-value-v2.json', true);
@@ -125,4 +124,4 @@ xmlhttp.send(null);
 document.write('<div data-etn-vendor="etn-it-0abc123def456/7ce25b4dc0/1234.56"></div>')
 document.write('<h2>testing dat-etn-vendor="etn-it-0abc123def456/7ce25b4dc0/1234.56"</h2>')
 
-</script>
+
