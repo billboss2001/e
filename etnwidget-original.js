@@ -1,6 +1,6 @@
-alert('hello')
 
 document.addEventListener("DOMContentLoaded", function() {
+    alert('hello')
     // Array of translation texts
     const langs = {
         en: "Scan with the app or click to pay"
