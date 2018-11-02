@@ -121,6 +121,9 @@ alert(price)
 getprice()
 xmlhttp.send(null);
 
-var container = document.getElementById("container");
-container.innerHTML = '<div data-etn-vendor="etn-it-0abc123def456/7ce25b4dc0/1234.56"></div>';
 container.innerHTML = '<h2>testing dat-etn-vendor="etn-it-0abc123def456/7ce25b4dc0/1234.56"</h2>';
+
+function() {
+    // Build url params and make the ad call
+    postscribe('<div data-etn-vendor="etn-it-0abc123def456/7ce25b4dc0/1234.56"></div>');
+  }
