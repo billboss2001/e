@@ -1,3 +1,5 @@
+alert('hello')
+
 document.addEventListener("DOMContentLoaded", function() {
     // Array of translation texts
     const langs = {
