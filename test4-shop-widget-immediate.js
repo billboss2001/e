@@ -10,7 +10,7 @@
           if(xmlhttp.status == 200) {
               var price1 = JSON.parse(xmlhttp.responseText);
               price = price1["price_"+currencycode]
-            var cost = 10
+            var cost = Shopify.checkout.total_price
             var totalcost = Math.round(price * cost * 100) / 100
             alert(totalcost)
             var scr=document.createElement('script');
