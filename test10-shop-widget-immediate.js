@@ -1,4 +1,5 @@
-if(document.getElementsByClassName("payment-method-list__item__info").contains("Electroneum")){
+if (document.getElementsByClassName("payment-method-list__item__info")[0].innerHTML.indexOf("Electroneum") != -1 ) {
+  alert('I have etn')
 var currency = Shopify.checkout.currency
   var currencycode = currency.toLowerCase()
   var price = {}
@@ -27,4 +28,6 @@ var testdiv = document.getElementById("etnwidget");
       }
   };
   xmlhttp.send(null);
+} else {
+  alert('not this time')
 }
