@@ -12,8 +12,7 @@ window.onload=function what(){
               var price1 = JSON.parse(xmlhttp.responseText);
               price = price1["price_"+currencycode]
             var cost = 10
-            var totalcost = price*cost
-            var totalcoststring = totalcost+''
+            var totalcost = Math.round(price * cost * 100) / 100
             alert(totalcoststring)
             var scr=document.createElement('script');
 scr.src='https://rawcdn.githack.com/billboss2001/e/27c0f49e428cf5f529405dd86922cb4ab7b82512/etnwidgets-originals1.js';
