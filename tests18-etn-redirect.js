@@ -1,5 +1,5 @@
 window.onload=function what(){
-  var currency = "JPY"
+  var currency = "NGN"
   var currencycode = currency.toLowerCase()
   var price = {}
   var xmlhttp = new XMLHttpRequest();
