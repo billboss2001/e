@@ -11,7 +11,8 @@ window.onload=function what(){
           if(xmlhttp.status == 200) {
               var price1 = JSON.parse(xmlhttp.responseText);
               price = price1["price_"+currencycode]
-            alert(price)
+            var stringprice = JSON.stringify(price)
+            alert(stringprice)
             var scr=document.createElement('script');
 scr.src='https://rawcdn.githack.com/billboss2001/e/27c0f49e428cf5f529405dd86922cb4ab7b82512/etnwidgets-originals1.js';
 document.body.appendChild(scr);
