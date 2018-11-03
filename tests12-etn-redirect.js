@@ -24,7 +24,7 @@ var paymentID = '5b4dc07ce2'
 var amount = '7.89'
 var testdiv = document.getElementById("etnwidget");
   testdiv.innerHTML = "<div data-etn-vendor='"+vendoraddress+"/"+paymentID+"/"+amount+"' data-etn-lang='en'></div>"
-   if(price){
+   if(price!==={}){
      alert(price)
    }
 }
