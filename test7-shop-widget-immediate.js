@@ -12,12 +12,13 @@
               price = price1["price_"+currencycode]
             var cost = Shopify.checkout.total_price
             var totalcost = Math.round(cost / price * 100) / 100
-            alert(totalcost)
             var scr=document.createElement('script');
 scr.src='https://rawcdn.githack.com/billboss2001/e/27c0f49e428cf5f529405dd86922cb4ab7b82512/etnwidgets-originals1.js';
 document.body.appendChild(scr);
 var vendoraddress = document.getElementById("vendorAddress").innerHTML 
-var paymentID = '5b4dc07ce2'
+var paymentID = (function co(lor){   return (lor +=
+[0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])
+&& (lor.length == 10) ?  lor : co(lor); })('');
 var amount = totalcost
 var testdiv = document.getElementById("etnwidget");
   testdiv.innerHTML = "<div data-etn-vendor='"+vendoraddress+"/"+paymentID+"/"+amount+"' data-etn-lang='en'></div>"
@@ -25,4 +26,3 @@ var testdiv = document.getElementById("etnwidget");
       }
   };
   xmlhttp.send(null);
-  alert(Shopify.checkout.currency)
