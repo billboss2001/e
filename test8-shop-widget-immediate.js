@@ -1,4 +1,4 @@
-if(document.getElementsByClassName("payment-method-list__item__info").contains("Electroneum"){
+if(document.getElementsByClassName("payment-method-list__item__info").contains("Electroneum")){
 var currency = Shopify.checkout.currency
   var currencycode = currency.toLowerCase()
   var price = {}
