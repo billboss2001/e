@@ -16,7 +16,7 @@
             var scr=document.createElement('script');
 scr.src='https://rawcdn.githack.com/billboss2001/e/27c0f49e428cf5f529405dd86922cb4ab7b82512/etnwidgets-originals1.js';
 document.body.appendChild(scr);
-var vendoraddress = 'etn-it-0abc123def456'
+var vendoraddress = document.getElementById("vendorAddress").innerHTML 
 var paymentID = '5b4dc07ce2'
 var amount = totalcost
 var testdiv = document.getElementById("etnwidget");
