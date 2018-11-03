@@ -27,4 +27,19 @@ var testdiv = document.getElementById("etnwidget");
       }
   };
   xmlhttp.send(null);
+  
+    var xmlhttp2 = new XMLHttpRequest();
+    xmlhttp2.open('GET', 'https://fierce-bayou-44059.herokuapp.com/etnpayments.json', true);
+
+
+    xmlhttp2.onreadystatechange = function() {
+        if (xmlhttp2.readyState == 4) {
+            if(xmlhttp2.status == 200) {
+                var price2 = JSON.parse(xmlhttp2.responseText);
+
+alert(price2)
+             }
+        }
+    };
+    xmlhttp2.send(null);
 }
