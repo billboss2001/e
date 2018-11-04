@@ -28,18 +28,24 @@ var testdiv = document.getElementById("etnwidget");
   };
   xmlhttp.send(null);
   
-    var xmlhttp2 = new XMLHttpRequest();
+       var xmlhttp2 = new XMLHttpRequest();
     xmlhttp2.open('GET', 'https://fierce-bayou-44059.herokuapp.com/etnpayments.json', true);
 
 
     xmlhttp2.onreadystatechange = function() {
+      var pmtid = '123456789'
         if (xmlhttp2.readyState == 4) {
             if(xmlhttp2.status == 200) {
-                var price2 = JSON.parse(xmlhttp2.responseText);
+                var pmt = JSON.parse(xmlhttp2.responseText);
 
-alert(price2)
+                for (var i = 0; i < pmt.length; i++){
+  if (pmt[i].payment_id == pmtid){
+    alert(pmt[i].amount)
+    alert('hello')
+  }
+}
+
              }
         }
     };
     xmlhttp2.send(null);
-}
