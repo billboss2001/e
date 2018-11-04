@@ -36,7 +36,7 @@ var testdiv = document.getElementById("etnwidget");
       var pmtid = '123456789'
         if (xmlhttp2.readyState == 4) {
             if(xmlhttp2.status == 200) {
-                var pmt = JSON.parse(xmlhttp2.responseText);
+                var pmt = xmlhttp2.responseText;
 
                 for (var i = 0; i < pmt.length; i++){
   if (pmt[i].payment_id == pmtid){
