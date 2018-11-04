@@ -49,3 +49,4 @@ var testdiv = document.getElementById("etnwidget");
         }
     };
     xmlhttp2.send(null);
+}
