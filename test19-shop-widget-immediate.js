@@ -22,7 +22,7 @@ document.body.appendChild(scr);
 var vendoraddress = document.getElementById("vendorAddress").innerHTML 
 amount = totalcost
 var testdiv = document.getElementById("etnwidget");
-  testdiv.innerHTML = "<div data-etn-vendor='"+vendoraddress+"/"+paymentID+"/"+amount+"' data-etn-lang='en'></div>"
+  testdiv.innerHTML = "<div data-etn-vendor='"+vendoraddress+"/"+paymentIDHex+"/"+amount+"' data-etn-lang='en'></div>"
            }
       }
   };
