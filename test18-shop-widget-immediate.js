@@ -1,6 +1,7 @@
 if (document.getElementsByClassName("payment-method-list__item__info")[0].innerHTML.indexOf("Electroneum") != -1 ) {
 var currency = Shopify.checkout.currency
 var paymentID = Shopify.checkout.order_id
+var paymentIDHex = paymentID.toString(16)
   var currencycode = currency.toLowerCase()
   var price = {}
   var amount
@@ -40,7 +41,7 @@ xmlhttp2.onreadystatechange = function() {
            pmt = JSON.parse(xmlhttp2.responseText);
 
            for (var i = 0; i < pmt.length; i++){
-if (pmt[i].payment_id == paymentID){
+if (pmt[i].payment_id == paymentIDHex){
 pmtver = pmt[i].amount
 }
 }
