@@ -44,7 +44,7 @@ xmlhttp2.onreadystatechange = function() {
    }
 };
 body = '{"id":"' + paymentIDHex + '"}'
-xmlhttp2.send(JSON.stringify(body));
+xmlhttp2.send(body);
 
 if (pmt == undefined || pmt.status == 'unpaid') {
   setTimeout(getPaymentVer, 2000)
