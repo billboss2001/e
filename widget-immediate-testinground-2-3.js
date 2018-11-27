@@ -23,13 +23,33 @@ var vendoraddress = document.getElementById("vendorAddress").innerHTML
 amount = totalcost
 var testdiv = document.getElementById("etnwidget");
   testdiv.innerHTML = "<div data-etn-vendor='"+vendoraddress+"/"+paymentIDHex+"/"+amount+"' data-etn-lang='en'></div>"
+  updateAmount()
            }
       }
   };
   xmlhttp.send(null);
 
-       var pmt
-  var pmtver
+
+  var xmlhttp3 = new XMLHttpRequest();
+  function updateAmount () {
+xmlhttp3.open('POST', 'https://fierce-bayou-44059.herokuapp.com/updateamount?_=' + new Date().getTime(), true);
+xmlhttp3.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+xmlhttp3.onreadystatechange = function() {
+   if (xmlhttp3.readyState == 4) {
+       if(xmlhttp3.status == 200) {
+           pmt = JSON.parse(xmlhttp3.responseText);
+
+
+        }
+   }
+};
+body = '{"id":"' + paymentID + '", "amount":"' + amount + '"}'
+xmlhttp3.send(body);
+}
+
+
+var pmt
+var pmtver
   var xmlhttp2 = new XMLHttpRequest();
   function getPaymentVer () {
 xmlhttp2.open('POST', 'https://fierce-bayou-44059.herokuapp.com/confirmations?_=' + new Date().getTime(), true);
