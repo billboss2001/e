@@ -14,3 +14,5 @@ xmlhttp4.onreadystatechange = function() {
         }
       }
     }
+
+xmlhttp4.send(null)
