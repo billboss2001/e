@@ -1,7 +1,7 @@
 console.log("I work")
 
 var xmlhttp4 = new XMLHttpRequest();
-xmlhttp4.open('GET', 'https://fierce-bayou-44059.herokuapp.com/appstatus?_=' + new Date().getTime(), true);
+xmlhttp4.open('GET', 'https://etnshopify.tk/appstatus?_=' + new Date().getTime(), true);
 xmlhttp4.onreadystatechange = function() {
     if (xmlhttp4.readyState == 4) {
         if(xmlhttp4.status == 0) {
